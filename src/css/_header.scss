@@ -80,12 +80,23 @@
 li.drop-down {
   cursor: pointer;
   position: relative;
-  &:hover>.drop-down-menu, &.active>.drop-down-menu {
-    max-height: 600px;
-    visibility: visible;
+  @media (min-width: 901px) {
+    &:hover>.drop-down-menu {
+      max-height: 600px;
+      visibility: visible;
+    }
+    &:hover>a>.arrow-down {
+      transform: translateY(-50%) rotate(90deg);
+    }
   }
-  &:hover>a>.arrow-down, &.active>a>.arrow-down {
-    transform: translateY(-50%) rotate(90deg);
+  @media (max-width: 900px) {
+    &.active>.drop-down-menu {
+      max-height: 600px;
+      visibility: visible;
+    }
+    &.active>a>.arrow-down {
+      transform: translateY(-50%) rotate(90deg);
+    }
   }
 }
 
@@ -112,9 +123,17 @@ li.drop-down {
         background-color: #1b1b1b;
       }
     }
-    &:hover .drop-down-menu-right {
-      max-height: 600px;
-      visibility: visible;
+    @media (min-width: 901px) {
+      &:hover .drop-down-menu-right {
+        max-height: 600px;
+        visibility: visible;
+      }
+    }
+    @media (max-width: 900px) {
+      &.active .drop-down-menu-right {
+        max-height: 600px;
+        visibility: visible;
+      }
     }
   }
 }

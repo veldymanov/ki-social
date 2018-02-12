@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   mob.body = document.querySelector('body');
   mob.windowScroll = '';
   mob.dropDownElements = document.querySelectorAll('.js-drop-down');
+  mob.dropDownMenuItemElements = document.querySelectorAll('.js-drop-down-menu-item');
 
   mob.sandwichBtn.addEventListener('click', function(e){
     e.preventDefault();
@@ -26,10 +27,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   // click instead of hover
+  mob.dropDownMenuItemElements.forEach((dropDownMenuItemElement) => {
+    dropDownMenuItemElement.addEventListener('click', function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      this.classList.toggle("active");
+    });
+  });
   mob.dropDownElements.forEach((dropDownElement) => {
     dropDownElement.addEventListener('click', function(e){
-    //  e.preventDefault();
-    //  this.classList.toggle("active");
+     // e.preventDefault();
+      this.classList.toggle("active");
     });
   });
 
