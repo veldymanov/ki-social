@@ -22,33 +22,48 @@
       padding: 0;
       position: fixed;
       top: 70px;
-      width: 250px;
+      width: 200px;
       >li {
         border-top: 2px solid transparent;
         flex-basis: 100%;
         margin: 0;
-        padding: 10px 10px 10px 30px;
+        padding: 0;
         &:last-child {
           position: static;
         }
         &:hover {
-          background-color: rgba(200, 200, 200, 1);
           border-color: transparent;
+        }
+        a {
+          padding: 10px 10px 10px 30px;
         }
       }
     }
 
     .drop-down-menu {
-      right: -29%;
-      top: 0;
+      padding: 0;
+      position: relative;
+    //  right: -29%;
+      top: 10px;
+      width: 100%;
+      li {
+        a {padding-left: 5px;}
+      }
     }
     .drop-down-menu-right {
+      position: absolute;
       left: auto;
-      right: -40%;
-      top: 100%;
+      right: calc(-100% - 1px);
+      top: 0;
+      li {
+        a {padding-left: 30px;}
+      }
     }
     .arrow-down {
       right: 25px;
+    }
+    .arrow-right {
+      right: 7px;
     }
 		.sandwich {
 			display: block;

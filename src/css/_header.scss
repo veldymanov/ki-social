@@ -41,7 +41,7 @@
     margin: 0 20px;
     padding: 10px 0;
     position: relative;
-    transition: border-color 0.4s;
+    transition: border-color $transition_duration;
     @media (max-width:1000px) {
       margin: 0 15px;
     }
@@ -71,6 +71,7 @@
     a {
       color: inherit;
       display: block;
+      position: relative;
       text-decoration: none;
     }
   }
@@ -79,9 +80,12 @@
 li.drop-down {
   cursor: pointer;
   position: relative;
-  &:hover>.drop-down-menu {
+  &:hover>.drop-down-menu, &.active>.drop-down-menu {
     max-height: 600px;
     visibility: visible;
+  }
+  &:hover>a>.arrow-down, &.active>a>.arrow-down {
+    transform: translateY(-50%) rotate(90deg);
   }
 }
 
@@ -94,16 +98,19 @@ li.drop-down {
   opacity: 0.9;
   padding: 10px 0;
   position: absolute;
-  transition: max-height 0.5s 0.3s, visibility 0s 0.3s;
+  transition: max-height $transition_duration ease $transition_delay, visibility 0s  $transition_delay;
   visibility: hidden;
   width: 240px;
   z-index: 2;
   >li {
     color: #fff;
-    padding: 10px 40px 10px 25px;
+    padding: 0;
     position: relative;
-    &:hover {
-      background-color: #1b1b1b;
+    >a {
+      padding: 10px 40px 10px 25px;
+      &:hover {
+        background-color: #1b1b1b;
+      }
     }
     &:hover .drop-down-menu-right {
       max-height: 600px;
@@ -112,24 +119,12 @@ li.drop-down {
   }
 }
 
-.drop-down-menu-right {
-  max-height: 0;
-  left: calc(100% + 2px);
-  position: absolute;
-  top: 0;
-  transition: max-height 0.5s 0.3s, visibility 0s 0.3s;
-  li {
-    padding: 0;
-    a {
-      padding: 10px 40px 10px 25px;
-    }
-  }
-}
-
 .arrow {
 	height: auto;
   position: absolute;
   top: 50%;
+  transform-origin: 50% 50%;
+  transition: transform  $transition_duration ease;
 	path {
 		fill: transparent;
 		stroke: currentColor;
@@ -145,4 +140,12 @@ li.drop-down {
   right: 15px;
   width: 7px;
   transform: translateY(-50%) rotate(180deg);
+}
+
+.drop-down-menu-right {
+  max-height: 0;
+  left: calc(100% + 1px);
+  position: absolute;
+  top: 0;
+  transition: max-height  $transition_duration linear  $transition_delay, visibility 0s  $transition_delay;
 }
