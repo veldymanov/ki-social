@@ -1,4 +1,4 @@
-# Template
+# KI Social
 
 ## Directory structure
 
@@ -6,40 +6,19 @@
 docs/                     - Production app
                             'docs/' folder name has chosen for hosting in GitHub Pages when needed.
                                 To create the 'docs/' run 'gulp build'
-                                To start browser-sync run 'gulp build:server'                          
+                                To start browser-sync run 'gulp build:server'
 node_modules/             - NPM modules. Created after 'npm install'
 src/                      - Development app
     css/                  - All scss and css files
-    fonts/                - 
-    imgages/              - 
-        blog/             - 
-            blog-post/    - 
-                comments/ -
-        customers/        - 
-        icons/            - 
-        linea/            -
-        parallax/         -
-        team/             - 
-            resume/       - 
-    js/                   - 
-    about.html            - 
-    blog.html             - 
-    blob_post.html        - 
-    contact.html          - 
-    favicon.ico           -    
+    fonts/                -
+    imgages/              -
+    js/                   -
+    favicon.ico           -
     index.html            -
-    item_portfolio.html   - 
-    manifest.md           -
-    portfolio.html        - 
-    service-worker.js     - 
-    services.html         - 
-    team.html             - 
-    testimonials.html     - 
-.gitignore                - 
+.gitignore                -
 gulpfile.js               -
-opt-status.xlsx           - Status of site optimization 
-package.json              - 
-README.md                 - 
+package.json              -
+README.md                 -
 ```
 
 ## Gulp
@@ -50,28 +29,24 @@ README.md                 -
     //check node version
     node -v
     //check npm version
-    npm -v 
+    npm -v
 ```
-#### Install global NPM packages 
+#### Install global NPM packages
 ```
     npm install gulp-cli -g
         //check gulp version
         gulp -v
-    
-	npm install -g browser-sync	
+
+	npm install -g browser-sync
         //check browser-sync version
-        browser-sync --version 
-	
+        browser-sync --version
+
     npm install -g npm-check
         //check npm-check version
-        npm-check --version	 
+        npm-check --version
 ```
 
 ### Run The Project
-#### Clone repository:
-```
-    git clone https://veldymanov@bitbucket.org/veldymanov/zapleo_new.git
-```
 #### Inside "../zapleo_new/" install npm packages
 ````
     npm install
@@ -95,7 +70,7 @@ README.md                 -
 ````
     All pictures inside 'src/images/' directory will be optimized.
     Optimized pictures will get ".z" (*.z.{png, jpg, gif, svg, webp}) suffix, which shows that picture is optimized.
-    Original pictures will be deleted. 
+    Original pictures will be deleted.
 
     To start optimization run (inside "../zapleo_new/"):
         gulp pic
