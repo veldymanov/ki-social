@@ -6,94 +6,105 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
-.header{align-items:center;display:flex;background-color:rgba(255,255,255,.9);padding:24px 42px;position:fixed;top:0;width:100vw;z-index:1}.header h1{margin:0}.header nav{flex-grow:1;position:relative}@media (max-width:1000px){.header{padding:24px 15px}}.logo{display:block}.logo img{display:block}.head-nav{display:flex;font-size:18px;list-style-type:none;margin:0;padding:0 0 0 6%;position:relative}@media (max-width:1000px){.head-nav{padding:0 0 0 15px}}.head-nav>li{border-top:2px solid transparent;margin:0 20px;padding:10px 0;position:relative;transition:border-color .4s}@media (max-width:1000px){.head-nav>li{margin:0 15px}}.head-nav>li:first-child{color:#0079c2}.head-nav>li:nth-child(2){color:#f57b20}.head-nav>li:nth-child(3){color:#ec519d}.head-nav>li:nth-child(4){color:#50b948}.head-nav>li:nth-child(5){color:#00bce4}.head-nav>li:last-child{color:#8e499b;position:absolute;right:0}.head-nav>li:hover{border-color:#3b3b3b}.head-nav>li a{color:inherit;display:block;text-decoration:none}li.drop-down{cursor:pointer;position:relative}li.drop-down:hover>.drop-down-menu{max-height:600px;visibility:visible}.drop-down-menu{background-color:#3b3b3b;box-shadow:0 0 5px 0 rgba(0,0,0,.1);list-style-type:none;margin:0;max-height:0;opacity:.9;padding:10px 0;position:absolute;transition:max-height .5s .3s,visibility 0s .3s;visibility:hidden;width:240px;z-index:2}.drop-down-menu>li{color:#fff;padding:10px 40px 10px 25px;position:relative}.drop-down-menu>li:hover{background-color:#1b1b1b}.drop-down-menu>li:hover .drop-down-menu-right{max-height:600px;visibility:visible}.drop-down-menu-right{max-height:0;left:calc(100% + 2px);position:absolute;top:0;transition:max-height .5s .3s,visibility 0s .3s}.drop-down-menu-right li{padding:0}.drop-down-menu-right li a{padding:10px 40px 10px 25px}.arrow{height:auto;position:absolute;top:50%}.arrow path{fill:transparent;stroke:currentColor;stroke-width:70}.arrow-down{right:-15px;width:7px;transform:translateY(-50%) rotate(-90deg)}.arrow-right{right:15px;width:7px;transform:translateY(-50%) rotate(180deg)}.sandwich{background:url(/images/combined-shape.z.svg);background-size:100% 100%;cursor:pointer;display:none;height:20px;position:fixed;right:30px;top:30px;width:25px;z-index:6}@media (max-width:900px){.header .head-nav{background-color:#fff;box-shadow:0 0 25px 0 rgba(0,0,0,.15);display:none;flex-wrap:wrap;left:0;padding:0;position:fixed;top:70px;width:250px}.header .head-nav>li{border-top:2px solid transparent;flex-basis:100%;margin:0;padding:10px 10px 10px 30px}.header .head-nav>li:last-child{position:static}.header .head-nav>li:hover{background-color:#c8c8c8;border-color:transparent}.header .drop-down-menu{right:-29%;top:0}.header .drop-down-menu-right{left:auto;right:-40%;top:100%}.header .arrow-down{right:25px}.header .sandwich{display:block}}@media (min-width:900px){body{overflow-y:auto!important;position:inherit!important}.head-nav{display:flex!important}}*{box-sizing:border-box}body{font-family:Lato,sans-serif;margin:0;min-width:420px;padding:0}aside,footer,header,main,section{margin:0;padding:0}::-webkit-scrollbar{-webkit-appearance:none;width:4px}::-webkit-scrollbar-track{background-color:rgba(206,206,206,.6);border-radius:8px}::-webkit-scrollbar-thumb{background-color:#828282;border-radius:8px}.present{display:flex;flex-wrap:wrap;justify-content:center;margin-top:92px;padding:0 128px}@media (max-width:1050px){.present{padding:0 50px}}@media (max-width:900px){.present{padding:0}}.present .skew-box{height:400px;width:370px}.skew-box{background-color:#fff;box-shadow:0 0 25px 0 rgba(0,0,0,.15);padding:0;position:relative;transform:skew(0deg,30deg)}.skew-box:nth-child(2){margin-left:20px;top:220px}@media (max-width:750px){.skew-box:nth-child(2){margin-left:0;top:20px}}.text-box{padding:60px 30px 80px 30px;transform:skew(0deg,-30deg)}.text-box h2{color:#0079c2;font-size:25px;font-weight:500;text-transform:uppercase}.text-box p{color:#5e5e5e;font-size:20px;font-weight:300}body{background:url(/images/group-1985.z.svg) top center no-repeat;background-size:1600px 1600px}
+.header{align-items:center;display:flex;background-color:rgba(255,255,255,.9);padding:24px 42px;position:fixed;top:0;width:100vw;z-index:1}.header h1{margin:0}.header nav{flex-grow:1;position:relative}@media (max-width:1000px){.header{padding:24px 15px}}.logo{display:block}.logo img{display:block}.head-nav{display:flex;font-size:18px;list-style-type:none;margin:0;padding:0 0 0 6%;position:relative}@media (max-width:1000px){.head-nav{padding:0 0 0 15px}}.head-nav>li{border-top:2px solid transparent;margin:0 20px;padding:10px 0;position:relative;transition:border-color .25s}@media (max-width:1000px){.head-nav>li{margin:0 15px}}.head-nav>li:first-child{color:#0079c2}.head-nav>li:nth-child(2){color:#f57b20}.head-nav>li:nth-child(3){color:#ec519d}.head-nav>li:nth-child(4){color:#50b948}.head-nav>li:nth-child(5){color:#00bce4}.head-nav>li:last-child{color:#8e499b;position:absolute;right:0}.head-nav>li:hover{border-color:#3b3b3b}.head-nav>li a{color:inherit;display:block;position:relative;text-decoration:none}li.drop-down{cursor:pointer;position:relative}li.drop-down.active>.drop-down-menu,li.drop-down:hover>.drop-down-menu{max-height:600px;visibility:visible}li.drop-down.active>a>.arrow-down,li.drop-down:hover>a>.arrow-down{transform:translateY(-50%) rotate(90deg)}.drop-down-menu{background-color:#3b3b3b;box-shadow:0 0 5px 0 rgba(0,0,0,.1);list-style-type:none;margin:0;max-height:0;opacity:.9;padding:10px 0;position:absolute;transition:max-height .25s ease .2s,visibility 0s .2s;visibility:hidden;width:240px;z-index:2}.drop-down-menu>li{color:#fff;padding:0;position:relative}.drop-down-menu>li>a{padding:10px 40px 10px 25px}.drop-down-menu>li>a:hover{background-color:#1b1b1b}.drop-down-menu>li:hover .drop-down-menu-right{max-height:600px;visibility:visible}.arrow{height:auto;position:absolute;top:50%;transform-origin:50% 50%;transition:transform .25s ease}.arrow path{fill:transparent;stroke:currentColor;stroke-width:70}.arrow-down{right:-15px;width:7px;transform:translateY(-50%) rotate(-90deg)}.arrow-right{right:15px;width:7px;transform:translateY(-50%) rotate(180deg)}.drop-down-menu-right{max-height:0;left:calc(100% + 1px);position:absolute;top:0;transition:max-height .25s linear .2s,visibility 0s .2s}.sandwich{background:url(/images/combined-shape.z.svg);background-size:100% 100%;cursor:pointer;display:none;height:20px;position:fixed;right:30px;top:30px;width:25px;z-index:6}@media (max-width:900px){.header .head-nav{background-color:#fff;box-shadow:0 0 25px 0 rgba(0,0,0,.15);display:none;flex-wrap:wrap;left:0;padding:0;position:fixed;top:70px;width:200px}.header .head-nav>li{border-top:2px solid transparent;flex-basis:100%;margin:0;padding:0}.header .head-nav>li:last-child{position:static}.header .head-nav>li:hover{border-color:transparent}.header .head-nav>li a{padding:10px 10px 10px 30px}.header .drop-down-menu{padding:0;position:relative;top:10px;width:100%}.header .drop-down-menu li a{padding-left:5px}.header .drop-down-menu-right{position:absolute;left:auto;right:calc(-100% - 1px);top:0}.header .drop-down-menu-right li a{padding-left:30px}.header .arrow-down{right:25px}.header .arrow-right{right:7px}.header .sandwich{display:block}}@media (min-width:900px){body{overflow-y:auto!important;position:inherit!important}.head-nav{display:flex!important}}*{box-sizing:border-box}body{font-family:Lato,sans-serif;margin:0;min-width:420px;padding:0}aside,footer,header,main,section{margin:0;padding:0}::-webkit-scrollbar{-webkit-appearance:none;width:4px}::-webkit-scrollbar-track{background-color:rgba(206,206,206,.6);border-radius:8px}::-webkit-scrollbar-thumb{background-color:#828282;border-radius:8px}.present{display:flex;flex-wrap:wrap;justify-content:center;margin-top:92px;padding:0 128px}@media (max-width:1050px){.present{padding:0 50px}}@media (max-width:900px){.present{padding:0}}.present .skew-box{height:400px;width:370px}.skew-box{background-color:#fff;box-shadow:0 0 25px 0 rgba(0,0,0,.15);padding:0;position:relative;transform:skew(0deg,30deg)}.skew-box:nth-child(2){margin-left:20px;top:220px}@media (max-width:750px){.skew-box:nth-child(2){margin-left:0;top:20px}}.text-box{padding:60px 30px 80px 30px;transform:skew(0deg,-30deg)}.text-box h2{color:#0079c2;font-size:25px;font-weight:500;text-transform:uppercase}.text-box p{color:#5e5e5e;font-size:20px;font-weight:300}body{background:url(/images/group-1985.z.svg) top center no-repeat;background-size:1600px 1600px}
 </style>
     <title>KI Social</title>
 	</head>
 	<body>
     <header class="header">
-        <h1>
-          <a class="logo" href="index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="31" alt="Logo"><g fill="none" fill-rule="evenodd"><path fill="#772463" d="M17.061 15.292l8.403-5.062-8.403-5.063v10.125"/><path fill="#51AF46" d="M8.66 20.355l8.401-5.063-8.4-5.062v10.125"/><path fill="#D776A4" d="M17.061 5.167l-8.4 5.063 8.4 5.062V5.167"/><path fill="#00B3D2" d="M.258 25.417l8.402-5.062-8.402-5.063v10.125"/><path fill="#006FAC" d="M8.66 20.355L.258 25.417l8.402 5.061V20.355"/><path fill="#DB4D8F" d="M.258 15.292l8.402-5.061L.258 5.167v10.125"/><path fill="#772463" d="M8.66 10.23L.258 15.293l8.402 5.063V10.23"/><path fill="#EE9C54" d="M8.66.106L.258 5.167l8.402 5.064V.106"/><path fill="#00B3D2" d="M25.464 10.23L17.06 5.167 25.464.106V10.23"/><path fill="#E5722A" d="M17.061 15.292l8.403 5.063-8.403 5.062V15.292"/><path fill="#007F57" d="M17.061 25.417l-8.4-5.062 8.4-5.063v10.125"/><path fill="#EE9C54" d="M25.464 20.355l-8.403 5.062 8.403 5.061V20.355"/><path fill="#4EAF55" d="M29.19 20.355V10.23"/><path fill="#00B3D2" d="M37.593 5.167l-8.402 5.064 8.402 5.061V5.167"/><path fill="#006FAC" d="M29.19 10.23l8.403-5.063L29.191.106v10.125"/><path fill="#DB4D8F" d="M37.593 15.292l-8.402 5.063 8.402 5.062V15.292"/><path fill="#772463" d="M29.19 20.355l8.403-5.063-8.402-5.061v10.124"/><path fill="#51AF46" d="M29.19 30.478l8.403-5.061-8.402-5.062v10.123"/></g></svg>
-          </a>
-        </h1>
-				<nav>
-					<ul class="head-nav js-head-nav">
-            <li><a href="index.html">HOME</a></li>
+      <h1>
+        <a class="logo" href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="38" height="31" alt="Logo"><g fill="none" fill-rule="evenodd"><path fill="#772463" d="M17.061 15.292l8.403-5.062-8.403-5.063v10.125"/><path fill="#51AF46" d="M8.66 20.355l8.401-5.063-8.4-5.062v10.125"/><path fill="#D776A4" d="M17.061 5.167l-8.4 5.063 8.4 5.062V5.167"/><path fill="#00B3D2" d="M.258 25.417l8.402-5.062-8.402-5.063v10.125"/><path fill="#006FAC" d="M8.66 20.355L.258 25.417l8.402 5.061V20.355"/><path fill="#DB4D8F" d="M.258 15.292l8.402-5.061L.258 5.167v10.125"/><path fill="#772463" d="M8.66 10.23L.258 15.293l8.402 5.063V10.23"/><path fill="#EE9C54" d="M8.66.106L.258 5.167l8.402 5.064V.106"/><path fill="#00B3D2" d="M25.464 10.23L17.06 5.167 25.464.106V10.23"/><path fill="#E5722A" d="M17.061 15.292l8.403 5.063-8.403 5.062V15.292"/><path fill="#007F57" d="M17.061 25.417l-8.4-5.062 8.4-5.063v10.125"/><path fill="#EE9C54" d="M25.464 20.355l-8.403 5.062 8.403 5.061V20.355"/><path fill="#4EAF55" d="M29.19 20.355V10.23"/><path fill="#00B3D2" d="M37.593 5.167l-8.402 5.064 8.402 5.061V5.167"/><path fill="#006FAC" d="M29.19 10.23l8.403-5.063L29.191.106v10.125"/><path fill="#DB4D8F" d="M37.593 15.292l-8.402 5.063 8.402 5.062V15.292"/><path fill="#772463" d="M29.19 20.355l8.403-5.063-8.402-5.061v10.124"/><path fill="#51AF46" d="M29.19 30.478l8.403-5.061-8.402-5.062v10.123"/></g></svg>
+        </a>
+      </h1>
+      <nav>
+        <ul class="head-nav js-head-nav">
+          <li><a href="index.html">HOME</a></li>
 
-						<li class="drop-down js-drop-down"> PRODUCTS
+          <li class="drop-down js-drop-down">
+            <a href="javascript:void(0)">PRODUCTS
               <svg class="arrow arrow-down" viewBox="0 0 250 400"><path d="M 225 25 L 25 200 L 225 375"/></svg>
-              <ul class="drop-down-menu js-drop-down-menu">
-                <li><a href="#">Complience solution</a></li>
-                <li><a href="#">Anonymized Analitics</a></li>
-                <li><a href="#">Data & Privacy Governance</a></li>
-                <li><a href="#">Loremipsum</a></li>
-                <li><a href="#">Next Menulist</a></li>
-                <li><a href="#">Anothe Menulist</a></li>
-              </ul>
-            </li>
+            </a>
+            <ul class="drop-down-menu js-drop-down-menu">
+              <li><a href="#">Complience solution</a></li>
+              <li><a href="#">Anonymized Analitics</a></li>
+              <li><a href="#">Data & Privacy Governance</a></li>
+              <li><a href="#">Loremipsum</a></li>
+              <li><a href="#">Next Menulist</a></li>
+              <li><a href="#">Anothe Menulist</a></li>
+            </ul>
+          </li>
 
-						<li class="drop-down js-drop-down"> TRAINING
+          <li class="drop-down js-drop-down">
+            <a href="javascript:void(0)">TRAINING
               <svg class="arrow arrow-down" viewBox="0 0 250 400"><path d="M 225 25 L 25 200 L 225 375"/></svg>
-              <ul class="drop-down-menu">
-                <li>Consulting $ Advisory
+            </a>
+            <ul class="drop-down-menu">
+              <li>
+                <a href="javascript:void(0)">Consulting $ Advisory
                   <svg class="arrow arrow-right" viewBox="0 0 250 400"><path d="M 225 25 L 25 200 L 225 375"/></svg>
-                  <ul class="drop-down-menu drop-down-menu-right js-drop-down-menu-right">
-                    <li><a href="#">Complience solution</a></li>
-                    <li><a href="#">Anonymized Analitics</a></li>
-                    <li><a href="#">Data & Privacy Governance</a></li>
-                    <li><a href="#">Loremipsum</a></li>
-                    <li><a href="#">Next Menulist</a></li>
-                    <li><a href="#">Anothe Menulist</a></li>
-                  </ul>
-                </li>
+                </a>
+                <ul class="drop-down-menu drop-down-menu-right js-drop-down-menu-right">
+                  <li><a href="#">Complience solution</a></li>
+                  <li><a href="#">Anonymized Analitics</a></li>
+                  <li><a href="#">Data & Privacy Governance</a></li>
+                  <li><a href="#">Loremipsum</a></li>
+                  <li><a href="#">Next Menulist</a></li>
+                  <li><a href="#">Anothe Menulist</a></li>
+                </ul>
+              </li>
 
-                <li>Goverment, Health & Social services
+              <li>
+                <a href="javascript:void(0)">Goverment, Health & Social services
                   <svg class="arrow arrow-right" viewBox="0 0 250 400"><path d="M 225 25 L 25 200 L 225 375"/></svg>
+                </a>
+                <ul class="drop-down-menu drop-down-menu-right js-drop-down-menu-right">
+                  <li><a href="#">Complience solution</a></li>
+                  <li><a href="#">Anonymized Analitics</a></li>
+                  <li><a href="#">Data & Privacy Governance</a></li>
+                  <li><a href="#">Loremipsum</a></li>
+                  <li><a href="#">Next Menulist</a></li>
+                  <li><a href="#">Anothe Menulist</a></li>
+                </ul>
+              </li>
 
-                  <ul class="drop-down-menu drop-down-menu-right js-drop-down-menu-right">
-                    <li><a href="#">Complience solution</a></li>
-                    <li><a href="#">Anonymized Analitics</a></li>
-                    <li><a href="#">Data & Privacy Governance</a></li>
-                    <li><a href="#">Loremipsum</a></li>
-                    <li><a href="#">Next Menulist</a></li>
-                    <li><a href="#">Anothe Menulist</a></li>
-                  </ul>
-                </li>
-
-                <li>Business
+              <li>
+                <a href="javascript:void(0)">Business
                   <svg class="arrow arrow-right" viewBox="0 0 250 400"><path d="M 225 25 L 25 200 L 225 375"/></svg>
-                  <ul class="drop-down-menu drop-down-menu-right js-drop-down-menu-right">
-                    <li><a href="#">Complience solution</a></li>
-                    <li><a href="#">Anonymized Analitics</a></li>
-                    <li><a href="#">Data & Privacy Governance</a></li>
-                    <li><a href="#">Loremipsum</a></li>
-                    <li><a href="#">Next Menulist</a></li>
-                    <li><a href="#">Anothe Menulist</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
+                </a>
+                <ul class="drop-down-menu drop-down-menu-right js-drop-down-menu-right">
+                  <li><a href="#">Complience solution</a></li>
+                  <li><a href="#">Anonymized Analitics</a></li>
+                  <li><a href="#">Data & Privacy Governance</a></li>
+                  <li><a href="#">Loremipsum</a></li>
+                  <li><a href="#">Next Menulist</a></li>
+                  <li><a href="#">Anothe Menulist</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
 
-						<li class="drop-down js-drop-down"> SERVICES
+          <li class="drop-down js-drop-down">
+            <a href="javascript:void(0)">SERVICES
               <svg class="arrow arrow-down" viewBox="0 0 250 400"><path d="M 225 25 L 25 200 L 225 375"/></svg>
-              <ul class="drop-down-menu js-drop-down-menu">
-                <li><a href="#">Complience solution</a></li>
-                <li><a href="#">Anonymized Analitics</a></li>
-                <li><a href="#">Data & Privacy Governance</a></li>
-                <li><a href="#">Loremipsum</a></li>
-                <li><a href="#">Next Menulist</a></li>
-                <li><a href="#">Anothe Menulist</a></li>
-              </ul>
-            </li>
+            </a>
+            <ul class="drop-down-menu js-drop-down-menu">
+              <li><a href="#">Complience solution</a></li>
+              <li><a href="#">Anonymized Analitics</a></li>
+              <li><a href="#">Data & Privacy Governance</a></li>
+              <li><a href="#">Loremipsum</a></li>
+              <li><a href="#">Next Menulist</a></li>
+              <li><a href="#">Anothe Menulist</a></li>
+            </ul>
+          </li>
 
-            <li><a href="#">CASE STUDIES</a></li>
+          <li><a href="#">CASE STUDIES</a></li>
 
-            <li><a href="#">CONTACT US</a></li>
-          </ul>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
 
-					<div class="sandwich js-sandwich"></div>
-        </nav>
+        <div class="sandwich js-sandwich"></div>
+      </nav>
     </header>
 
     <main>
@@ -130,7 +141,7 @@
     </footer>
 
     <script>
-"use strict";document.addEventListener("DOMContentLoaded",function(n){var e={};function t(){e.mobMenu.style.display="none",e.sandwichBtn.classList.remove("active"),e.body.style.cssText="overflow-y: auto; position: inherit;",window.scroll(0,e.windowScrollY)}e.sandwichBtn=document.querySelector(".js-sandwich"),e.mobMenu=document.querySelector(".js-head-nav"),e.body=document.querySelector("body"),e.windowScroll="",e.sandwichBtn.addEventListener("click",function(n){n.preventDefault(),n.stopPropagation(),e.windowScrollY=window.scrollY,this.classList.contains("active")?t():(this.classList.add("active"),e.mobMenu.style.display="flex",e.body.style.cssText="overflow-y: hidden;\n                                  position: fixed;\n                                  top: "+-e.windowScrollY+"px;")}),document.addEventListener("click",function(n){e.mobMenu.contains(n.target);e.mobMenu.contains(n.target)||t()})});
+"use strict";document.addEventListener("DOMContentLoaded",function(e){var t={};function n(){t.mobMenu.style.display="none",t.sandwichBtn.classList.remove("active"),t.body.style.cssText="overflow-y: auto; position: inherit;",window.scroll(0,t.windowScrollY)}t.sandwichBtn=document.querySelector(".js-sandwich"),t.mobMenu=document.querySelector(".js-head-nav"),t.body=document.querySelector("body"),t.windowScroll="",t.dropDownElements=document.querySelectorAll(".js-drop-down"),t.sandwichBtn.addEventListener("click",function(e){e.preventDefault(),e.stopPropagation(),t.windowScrollY=window.scrollY,this.classList.contains("active")?n():(this.classList.add("active"),t.mobMenu.style.display="flex",t.body.style.cssText="overflow-y: hidden; position: fixed; top: "+-t.windowScrollY+"px;")}),t.dropDownElements.forEach(function(e){e.addEventListener("click",function(e){e.preventDefault(),this.classList.toggle("active")})}),document.addEventListener("click",function(e){t.mobMenu.contains(e.target)||n();e.target})});
 </script>
 	</body>
 </html>
