@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // click instead of hover
   mob.dropDownElements.forEach((dropDownElement) => {
     dropDownElement.addEventListener('click', function(e){
-      e.preventDefault();
-      this.classList.toggle("active");
+    //  e.preventDefault();
+    //  this.classList.toggle("active");
     });
   });
 
