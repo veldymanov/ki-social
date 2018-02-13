@@ -13,55 +13,72 @@
 
 @media (max-width: 900px) {
 	.header {
-    .head-nav {
-      background-color: rgba(255, 255, 255, 1);
-      box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
-      display: none;
-      flex-wrap: wrap;
-      left: 0;
-      max-height: calc(100vh - 75px);
-      overflow-x: hidden;
-      overflow-y: auto;
-      padding: 0;
+    .head-nav-container {
       position: fixed;
-      top: 70px;
-      width: 220px;
-      >li {
-        border-top: 2px solid transparent;
-        flex-basis: 100%;
-        margin: 0;
+      left: 0;
+      height: auto;
+      max-height: calc(100vh - 79px);
+      overflow-y: auto;
+      top: 79px;
+      width: 100%;
+
+      .head-nav {
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
+        display: none;
+        flex-wrap: wrap;
+        height: auto;
         padding: 0;
-        &:last-child {
-          position: static;
+        width: 220px;
+        @media (max-width: 420px) {}
+          width: 200px;
+        >li {
+          border-top: 2px solid transparent;
+          flex-basis: 100%;
+          margin: 0;
+          padding: 0;
+          &:last-child {
+            position: static;
+          }
+          &:hover {
+            border-color: transparent;
+          }
+          a {
+            padding: 10px 10px 10px 30px;
+          }
         }
-        &:hover {
-          border-color: transparent;
+      }
+
+      .drop-down-menu {
+        padding: 0;
+        position: relative;
+        top: 10px;
+        width: 100%;
+        li {
+          a {padding-left: 5px;}
         }
-        a {
-          padding: 10px 10px 10px 30px;
+      }
+
+      .drop-down-menu-right {
+        position: absolute;
+        left: auto;
+        right: calc(-100% - 1px);
+        top: 0;
+        @media (max-width: 420px) {
+          right: -78%;
+          width: 155px;
+        }
+        li {
+          a {
+            padding-left: 30px;
+            @media (max-width: 420px) {
+              padding-left: 5px;
+            }
+          }
         }
       }
     }
 
-    .drop-down-menu {
-      padding: 0;
-      position: relative;
-    //  right: -29%;
-      top: 10px;
-      width: 100%;
-      li {
-        a {padding-left: 5px;}
-      }
-    }
-    .drop-down-menu-right {
-      position: absolute;
-      left: auto;
-      right: calc(-100% - 1px);
-      top: 0;
-      li {
-        a {padding-left: 30px;}
-      }
-    }
     .arrow-down {
       right: 25px;
     }

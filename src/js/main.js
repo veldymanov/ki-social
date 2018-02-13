@@ -3,9 +3,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   * Mobile menu
   */
   const mob = {};
+  mob.body = document.querySelector('body');
+  mob.html = document.querySelector('html');
   mob.sandwichBtn = document.querySelector('.js-sandwich');
   mob.mobMenu = document.querySelector('.js-head-nav');
-  mob.body = document.querySelector('body');
   mob.windowScroll = '';
   mob.dropDownElements = document.querySelectorAll('.js-drop-down');
   mob.dropDownMenuItemElements = document.querySelectorAll('.js-drop-down-menu-item');
@@ -22,7 +23,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
       this.classList.add("active");
       mob.mobMenu.style.display = "flex";
       //stop scroll propagation
-      mob.body.style.cssText = `overflow-y: hidden; position: fixed; top: ${-mob.windowScrollY}px;`;
+    //  mob.html.style.cssText = `margin-right: 4px;`;
+      mob.body.style.cssText = `
+
+        overflow-y: hidden;
+        position: fixed;`;
+      //  top: ${-mob.windowScrollY}px;`;
     }
   });
 
@@ -54,8 +60,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     mob.mobMenu.style.display = "none";
     mob.sandwichBtn.classList.remove('active');
     //scroll propagation
-    mob.body.style.cssText = `overflow-y: auto; position: inherit;`;
-    window.scroll(0, mob.windowScrollY);
+  //  mob.html.style.cssText = `margin-right: 0;`;
+    mob.body.style.cssText = `
+
+      overflow-y: scroll;
+      position: inherit;`;
+  //  window.scroll(0, mob.windowScrollY);
   }
 
 ;

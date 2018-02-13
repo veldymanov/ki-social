@@ -82,17 +82,9 @@ README.md                 -
      gulp build:server
 ````
 
-### Filezilla
+### Resourses
 ````
-	/domains/zapleo.com/public_html/dev/zapleo_new
-    url: zapleo.com/dev/zapleo_new/
-````
-
-### URL
-````
-    http://dev.zapleo.com/zapleo_new/
-````
-### Parallax
-````
-    http://matthew.wagerfield.com/parallax/
+   kidesign.io
+   kisocial.io
+   https://app.zeplin.io/project/597a88924d00aed3c6c6fe29
 ````
