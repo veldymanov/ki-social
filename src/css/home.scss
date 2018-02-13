@@ -1,6 +1,218 @@
 @import  "vars", "header", "mob-menu", "main";
 
+// body background
 body {
   background: url(../images/group-1985.z.svg) top center no-repeat;
-  background-size: 1600px 1600px;
+  background-size: 1600px 1200px;
+}
+
+// main
+.present {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 92px;
+  padding: 0 128px;
+  @media (max-width: 1300px) {
+    padding: 0 50px;
+  }
+  @media (max-width: 1150px) {
+    padding: 0 5px;
+  }
+  .skew-box {
+    height: 520px;
+    width: 500px;
+  }
+  .triangle {
+    flex-basis: 100%;
+  }
+  .present-footer {
+    flex-basis: 100%;
+  }
+}
+
+.skew-box {
+  background-color: #fff;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
+  padding: 0;
+  position: relative;
+  transform: skew(0deg, 30deg);
+
+  &:nth-child(2) {
+    margin-left: 20px;
+    top: 300px;
+    @media (max-width: 1030px) {
+      margin-right: 20px;
+      top: 20px;
+    }
+    @media (max-width: 1000px) {
+      margin: 0;
+    }
+  }
+}
+.text-box {
+  padding: 60px 30px 80px 30px;
+  transform: skew(0deg, -30deg);
+  h2 {
+    color: #0079c2;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  p {
+    color: #5e5e5e;
+    font-size: 28px;
+    font-weight: 300;
+  }
+}
+
+.triangle {
+  position: relative;
+  top: -115px;
+  .svg-container {
+    display: inline-block;
+    left: 50%;
+    position: relative;
+    transform: translate(-120%);
+    @media (max-width: 1030px) {
+      left: 50%;
+      transform: translate(-50%);
+      top: 35px;
+    }
+    .svg-text {
+      font-size: 25px;
+      left: 60px;
+      position: absolute;
+      text-align: center;
+      text-transform: uppercase;
+      top: 170px;
+      transform: rotate(-30deg);
+      white-space: pre-line;
+    }
+  }
+}
+
+.present-footer {
+  background-color: #fff;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  position: relative;
+  top: -140px;
+  @media (max-width: 1150px) {
+    margin: 0 2%;
+  }
+  @media (max-width: 1030px) {
+    top: -50px;
+  }
+  p{
+    color: #5e5e5e;
+    font-size: 18px;
+  }
+}
+
+// footer
+.footer {
+  padding: 0 5% 30px 5%;
+  position: relative;
+  top: -80px;
+  @media (max-width: 1030px) {
+    top: 0;
+  }
+  h3 {
+    color: #5e5e5e;
+    font-weight: normal;
+    margin: 0;
+  }
+}
+
+.mob-foot-btn {
+  border: solid 1px #979797;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+  height: 44px;
+  left: 50%;
+  margin: 30px 0;
+  position: relative;
+  transform: translateX(-50%);
+  width: 300px;
+  @media (max-width: 1030px) {
+    display: block;
+  }
+  &.active .arrow-filled-down  {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  p {
+    color: #5e5e5e;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-55%);
+  }
+  .arrow-filled-down {
+    height: auto;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    transform-origin: 50% 50%;
+    transition: transform  $transition_duration ease;
+    width: 13px;
+    path {
+      fill: #ecab0e;
+      //stroke: #ecab0e;
+      stroke-width: 70;
+    }
+  }
+}
+
+.foot-nav {
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+	list-style-type: none;
+	margin: 0;
+  padding: 50px 0;
+  position: relative;
+  transition: height .4s;
+  @media (max-width: 1030px) {
+    align-items: left;
+    background-color: #fff;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    height: 0;
+    left: 50%;
+    margin: -30px 0 30px 0;
+    overflow: hidden;
+    padding: 0 20px;
+    position: absolute;
+    transform: translate(-50%);
+    width: 300px;
+    &.active {
+      height: 168px;
+    }
+  }
+  li {
+    @media (max-width: 1030px) {
+      padding: 5px 0;
+    }
+    a {
+      border-bottom: 1px solid transparent;
+      color: #bbbdbf;
+      display: block;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.25s;
+      &:hover {
+        border-color: #f6832e;
+        color: #f6832e;
+      }
+    }
+  }
+}
+
+.foot-text {
+  color: #5e5e5e;
 }

@@ -1,5 +1,4 @@
 .sandwich {
-  background: url(../images/combined-shape.z.svg);
   background-size: 100% 100%;
   cursor: pointer;
   display: none;
@@ -9,6 +8,14 @@
   top: 30px;
 	width: 25px;
 	z-index: 6;
+}
+
+.sandwich-open {
+  background: url(../images/combined-shape.z.svg) no-repeat center;
+}
+
+.sandwich-x {
+  background: url(../images/combined-shape-x.z.svg) no-repeat center;
 }
 
 @media (max-width: 900px) {
@@ -28,15 +35,15 @@
         display: none;
         flex-wrap: wrap;
         height: auto;
+        overflow: hidden;
         padding: 0;
-        width: 220px;
-        @media (max-width: 420px) {}
-          width: 200px;
+        width: 100%;
         >li {
           border-top: 2px solid transparent;
           flex-basis: 100%;
           margin: 0;
           padding: 0;
+          text-align: center;
           &:last-child {
             position: static;
           }
@@ -44,46 +51,55 @@
             border-color: transparent;
           }
           a {
+            border-top: 1px solid rgba(0, 0, 0, 0.15);
             padding: 10px 10px 10px 30px;
+
+          }
+          &:last-child a {
+              border-bottom: 1px solid rgba(0, 0, 0, 0.15);
           }
         }
       }
 
       .drop-down-menu {
+        background-color: #fff;
         padding: 0;
         position: relative;
+        text-align: left;
         top: 10px;
         width: 100%;
         li {
-          a {padding-left: 5px;}
+          a {
+            border: none;
+            color: #5e5e5e;
+            padding-left: 25px;
+            &:hover {
+              background-color: #eee;
+            }
+          }
         }
       }
 
       .drop-down-menu-right {
-        position: absolute;
-        left: auto;
-        right: calc(-100% - 1px);
+        position: relative;
+        left: 0;
         top: 0;
-        @media (max-width: 420px) {
-          right: -78%;
-          width: 155px;
-        }
         li {
           a {
-            padding-left: 30px;
-            @media (max-width: 420px) {
-              padding-left: 5px;
-            }
+            padding-left: 50px;
           }
         }
       }
     }
 
     .arrow-down {
-      right: 25px;
+      right: 20%;
     }
     .arrow-right {
-      right: 7px;
+      right: 10%;
+      @media (max-width: 360px) {
+        right: 15px;;
+      }
     }
 		.sandwich {
 			display: block;

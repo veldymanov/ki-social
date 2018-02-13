@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   /**
-  * Mobile menu
+  * Header mobile menu
   */
   const mob = {};
   mob.body = document.querySelector('body');
@@ -20,15 +20,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if ( this.classList.contains('active')) {
       hideMobileMenu();
     } else {
-      this.classList.add("active");
-      mob.mobMenu.style.display = "flex";
-      //stop scroll propagation
-    //  mob.html.style.cssText = `margin-right: 4px;`;
-      mob.body.style.cssText = `
-
-        overflow-y: hidden;
-        position: fixed;`;
-      //  top: ${-mob.windowScrollY}px;`;
+      showMobileMenu()
     }
   });
 
@@ -42,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
   mob.dropDownElements.forEach((dropDownElement) => {
     dropDownElement.addEventListener('click', function(e){
-     // e.preventDefault();
+      e.preventDefault();
       this.classList.toggle("active");
     });
   });
@@ -52,22 +44,32 @@ document.addEventListener("DOMContentLoaded", function(event) {
       hideMobileMenu();
     }
 
-    const mobbb = e.target;
-    //if () {}
   });
 
   function hideMobileMenu(){
     mob.mobMenu.style.display = "none";
     mob.sandwichBtn.classList.remove('active');
-    //scroll propagation
-  //  mob.html.style.cssText = `margin-right: 0;`;
-    mob.body.style.cssText = `
-
-      overflow-y: scroll;
-      position: inherit;`;
-  //  window.scroll(0, mob.windowScrollY);
+    mob.sandwichBtn.classList.remove('sandwich-x');
+    mob.sandwichBtn.classList.add('sandwich-open');
+    mob.body.style.cssText = ` overflow-y: auto;  position: inherit;`;
   }
 
-;
+  function showMobileMenu(){
+    mob.sandwichBtn.classList.add("active");
+    mob.sandwichBtn.classList.remove('sandwich-open');
+    mob.sandwichBtn.classList.add('sandwich-x');
+    mob.mobMenu.style.display = "flex";
+    mob.body.style.cssText = ` overflow-y: hidden; position: fixed;`;
+  }
+
+  /**
+  * Footer mobile menu
+  */
+  mob.mobFootBtn = document.querySelector('.js-mob-foot-btn');
+  mob.mobFootNav = document.querySelector('.js-foot-nav');
+  mob.mobFootBtn.addEventListener('click', function(){
+    mob.mobFootBtn.classList.toggle('active');
+    mob.mobFootNav.classList.toggle('active');
+  });
 });
 
