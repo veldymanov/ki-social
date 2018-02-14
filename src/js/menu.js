@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-  /**
-  * Header mobile menu
-  */
   const mob = {};
   mob.body = document.querySelector('body');
   mob.html = document.querySelector('html');
@@ -61,15 +58,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
     mob.mobMenu.style.display = "flex";
     mob.body.style.cssText = ` overflow-y: hidden; position: fixed;`;
   }
-
-  /**
-  * Footer mobile menu
-  */
-  mob.mobFootBtn = document.querySelector('.js-mob-foot-btn');
-  mob.mobFootNav = document.querySelector('.js-foot-nav');
-  mob.mobFootBtn.addEventListener('click', function(){
-    mob.mobFootBtn.classList.toggle('active');
-    mob.mobFootNav.classList.toggle('active');
-  });
 });
 

@@ -88,3 +88,8 @@ README.md                 -
    kisocial.io
    https://app.zeplin.io/project/597a88924d00aed3c6c6fe29
 ````
+
+### Pages
+````
+   wordpress-hubspot.html
+````
