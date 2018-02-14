@@ -94,4 +94,5 @@ README.md                 -
   https://veldymanov.github.io/ki-social/
   https://veldymanov.github.io/ki-social/wordpress-hubspot.html
   https://veldymanov.github.io/ki-social/secure-comunication.html
+  https://veldymanov.github.io/ki-social/audit-solutions.html
 ````

@@ -1,0 +1,43 @@
+@import  "menu", "mob-menu", "main";
+
+main {
+  h2 {
+    margin-bottom: 25px;
+  }
+}
+
+.audit-list {
+  margin-bottom: 40px;
+}
+.audit-list-item {
+  display: flex;
+  picture {
+    display: block;
+    flex-basis: 60px;
+    flex-shrink: 0;
+    img {
+      display: block;
+      height: 50px;
+      position: relative;
+      transform: translateY(30%);
+      width: 50px;
+    }
+  }
+  .text {
+    p {
+      margin-top: 0;
+    }
+  }
+}
+
+.btn-right {
+  background-color: rgb(57, 57, 57);
+  a { padding-right: 30px; }
+  .arrow-left {
+    right: 10px;
+    transform: translateY(-35%) rotate(90deg);
+  }
+  &:hover {
+    background-color: rgba(57, 57, 57, 0.85);
+  }
+}

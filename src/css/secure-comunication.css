@@ -32,8 +32,8 @@ body {
 
 .header {
   align-items: center;
-  display: flex;
   background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
   padding: 24px 42px;
   position: fixed;
   top: 0;
@@ -274,6 +274,17 @@ li.drop-down {
 .header {
   background-color: rgba(255, 255, 255, 0); }
 
+.header-back {
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 92px;
+  left: 0;
+  position: fixed;
+  width: 75%; }
+  @media (max-width: 1000px) {
+    .header-back {
+      height: 79px;
+      width: 100%; } }
+
 main {
   display: flex;
   padding-bottom: 30px; }
@@ -287,20 +298,57 @@ main {
     @media (max-width: 900px) {
       main section {
         flex-basis: 100%;
-        padding-right: 70px; } }
+        padding-right: 70px;
+        padding-top: 100px; } }
     main section h2 {
       font-size: 18px;
       font-weight: 500;
-      color: #f57b20;
-      margin-bottom: 25px; }
+      color: #f57b20; }
+    main section h3 {
+      display: inline-block;
+      font-size: 25px;
+      padding: 0 20px;
+      position: relative;
+      text-align: center; }
+      main section h3::before {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid #00b3d2;
+        content: " ";
+        position: absolute;
+        height: 0;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%) rotate(-90deg);
+        width: 0; }
+      main section h3::after {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid #00b3d2;
+        content: " ";
+        position: absolute;
+        height: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%) rotate(90deg);
+        width: 0; }
+    main section h4 {
+      color: #5e5e5e;
+      font-size: 20px;
+      font-weight: 900;
+      margin: 10px 0; }
     main section p {
       font-size: 18px;
       white-space: pre-line; }
+    main section ul {
+      padding-left: 40px; }
+      main section ul li {
+        margin-left: -20px; }
   main aside {
     background: url(../images/group-1985.z.svg) top center no-repeat;
     background-size: 1200px 120%;
     flex-basis: 25%;
-    height: 96vh; }
+    min-height: 96vh; }
     @media (max-width: 900px) {
       main aside {
         display: none; } }
@@ -308,7 +356,8 @@ main {
 .btn-box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 20px; }
 
 .btn {
   position: relative; }
@@ -321,6 +370,7 @@ main {
     display: block;
     padding: 16px;
     position: relative;
+    text-align: center;
     text-decoration: none;
     z-index: 1; }
   .btn .arrow {
@@ -353,3 +403,6 @@ main {
     transform: translateY(-35%) rotate(90deg); }
   .btn-right:hover {
     background-color: rgba(236, 81, 157, 0.8); }
+
+main h2 {
+  margin-bottom: 25px; }
