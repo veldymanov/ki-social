@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   const mob = {};
   mob.body = document.querySelector('body');
-  mob.html = document.querySelector('html');
   mob.sandwichBtn = document.querySelector('.js-sandwich');
   mob.mobMenu = document.querySelector('.js-head-nav');
   mob.windowScroll = '';
@@ -37,10 +36,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 
   document.addEventListener('click', function(e){
-    if ( !mob.mobMenu.contains(e.target) ) {
+    if ( !mob.mobMenu.contains(e.target) && mob.sandwichBtn.classList.contains('active')) {
       hideMobileMenu();
     }
-
   });
 
   function hideMobileMenu(){
@@ -48,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     mob.sandwichBtn.classList.remove('active');
     mob.sandwichBtn.classList.remove('sandwich-x');
     mob.sandwichBtn.classList.add('sandwich-open');
-    mob.body.style.cssText = ` overflow-y: auto;  position: inherit;`;
+    mob.body.style.cssText = `overflow-y: auto;  position: inherit;`;
   }
 
   function showMobileMenu(){
