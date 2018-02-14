@@ -96,4 +96,5 @@ README.md                 -
   https://veldymanov.github.io/ki-social/secure-comunication.html
   https://veldymanov.github.io/ki-social/audit-solutions.html
   https://veldymanov.github.io/ki-social/data-liberation.html
+  https://veldymanov.github.io/ki-social/complience-solutions.html
 ````
