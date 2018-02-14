@@ -91,5 +91,6 @@ README.md                 -
 
 ### Pages
 ````
-   wordpress-hubspot.html
+  https://veldymanov.github.io/ki-social/
+  https://veldymanov.github.io/ki-social/wordpress-hubspot.html
 ````
