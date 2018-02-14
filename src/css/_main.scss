@@ -29,6 +29,10 @@ main {
       padding-right: 70px;
       padding-top: 100px;
     }
+    @media (max-width: 480px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
     h2 {
       font-size: 18px;
       font-weight: 500;
@@ -70,6 +74,25 @@ main {
       font-size: 20px;
       font-weight: 900;
       margin: 10px 0;
+    }
+    h5 {
+      display: inline-block;
+      font-size: 18px;
+      margin-bottom: 5px;
+      padding: 0 20px;
+      position: relative;
+      &::before {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid #00b3d2;
+        content: " ";
+        position: absolute;
+        height: 0;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%) rotate(-90deg);
+        width: 0;
+      }
     }
     p {
       font-size: 18px;

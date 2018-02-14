@@ -84,9 +84,9 @@ README.md                 -
 
 ### Resourses
 ````
-   kidesign.io
-   kisocial.io
-   https://app.zeplin.io/project/597a88924d00aed3c6c6fe29
+  kidesign.io
+  kisocial.io
+  https://app.zeplin.io/project/597a88924d00aed3c6c6fe29
 ````
 
 ### Pages
@@ -95,4 +95,5 @@ README.md                 -
   https://veldymanov.github.io/ki-social/wordpress-hubspot.html
   https://veldymanov.github.io/ki-social/secure-comunication.html
   https://veldymanov.github.io/ki-social/audit-solutions.html
+  https://veldymanov.github.io/ki-social/data-liberation.html
 ````
