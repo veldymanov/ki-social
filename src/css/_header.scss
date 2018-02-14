@@ -78,6 +78,9 @@ $transition_delay: 0.2s;
     &:hover {
       border-color: #3b3b3b;
     }
+    &.active {
+      border-color: #3b3b3b;
+    }
     a {
       color: inherit;
       display: block;
