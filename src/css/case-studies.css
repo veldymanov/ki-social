@@ -426,55 +426,52 @@ main {
     transform: translateY(-35%) rotate(90deg); }
 
 main section h2 {
-  color: #ec519d; }
+  color: #00bce4; }
 
-main aside {
-  background-size: 1600px 1600px; }
-
-.gdpr-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-
-.gdpr-list-item {
-  background-color: #ffffff;
-  border: solid 1px #cdcdcd;
-  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
-  flex-basis: 221px;
-  min-height: 77px;
-  margin-bottom: 20px;
-  text-transform: uppercase; }
-  .gdpr-list-item.long {
-    flex-basis: 465px; }
-  .gdpr-list-item p {
-    color: #5e5e5e;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 0;
-    position: relative;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%); }
-
-.lecture-list {
+.flex-box {
   display: flex;
   flex-wrap: wrap; }
 
-.lecture-list-item {
-  border: solid 1px #1790cc;
+.flex-box-item {
+  flex-basis: 50%; }
+  @media (max-width: 1000px) {
+    .flex-box-item {
+      flex-basis: 100%;
+      min-height: 300px; } }
+
+.empty {
+  background-color: #d8d8d8;
+  border: solid 1px #979797;
+  margin: 18px 0; }
+
+.download-pdf {
   border-radius: 4px;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
-  flex-basis: 60%;
-  padding: 15px;
-  margin-bottom: 20px; }
-  @media (max-width: 1300px) {
-    .lecture-list-item {
-      flex-basis: 85%; } }
-  @media (max-width: 800px) {
-    .lecture-list-item {
-      flex-basis: 100%; } }
-  .lecture-list-item p {
-    color: #5e5e5e;
+  border: solid 1px #1790cc;
+  color: #5e5e5e;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0 80px 0;
+  padding: 13px; }
+  .download-pdf:hover {
+    background-color: rgba(0, 0, 0, 0.05); }
+
+.btn {
+  background-color: rgba(57, 57, 57, 0.9); }
+  .btn:hover {
+    background-color: rgba(57, 57, 57, 0.8); }
+  .btn a {
     font-size: 18px;
     font-weight: bold;
-    margin: 0; }
+    text-transform: uppercase; }
+  .btn .arrow {
+    top: 49%; }
+
+.btn-right a {
+  padding-right: 30px; }
+
+.btn-right .arrow-left {
+  right: 10px;
+  transform: translateY(-35%) rotate(90deg); }
