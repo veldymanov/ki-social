@@ -1,0 +1,56 @@
+@import  "menu", "mob-menu", "main";
+
+main {
+  section{
+    h2 {
+      color: #ec519d;
+      font-size: 40px;
+      font-weight: 500;
+    }
+  }
+}
+
+.training-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.training-box-item {
+  border: solid 1px #cdcdcd;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+  flex-basis: 48%;
+  margin-bottom: 10px;
+  @media (max-width: 750px) {
+    flex-basis: 100%;
+  }
+  div {
+    border-bottom: solid 1px #cdcdcd;
+    background-color: #f3f3f3;
+    height: 66px;
+  }
+  p {
+    margin: 0;
+    padding: 15px;
+  }
+}
+
+.btn-box {
+  justify-content: flex-start;
+}
+.btn {
+  background-color: rgba(57, 57, 57, 0.9);
+  margin-right: 10px;
+  &:hover {
+    background-color: rgba(57, 57, 57, 0.8);
+  }
+  @media (max-width: 550px) {
+    margin: 10px auto;
+  }
+  a {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 16px;
+    text-transform: uppercase;
+  }
+}
