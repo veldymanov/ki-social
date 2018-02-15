@@ -136,7 +136,7 @@ gulp.task('inline', ['scripts:minify'], () =>
     base: 'docs',
     // js: uglify,
     css: [cleanCSS],
-    disabledTypes: ['img'], // Only inline css, js, svg files
+    disabledTypes: ['img, svg'], // Only inline css, js files
     // ignore: ['./css/do-not-inline-me.css']
   }))
   .pipe(gulp.dest('docs/'))
