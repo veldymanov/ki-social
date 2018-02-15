@@ -279,7 +279,8 @@ li.drop-down {
   height: 92px;
   left: 0;
   position: fixed;
-  width: 75%; }
+  width: 75%;
+  z-index: 1; }
   @media (max-width: 1000px) {
     .header-back {
       height: 79px;
@@ -364,10 +365,13 @@ main {
     main section ul {
       padding-left: 40px; }
       main section ul li {
-        margin-left: -20px; }
+        font-size: 18px;
+        margin-left: -20px;
+        padding: 3px 0; }
   main aside {
-    background: url(../images/group-1985.z.svg) top center no-repeat;
-    background-size: 1200px 120%;
+    background: url(../images/group-1985.z.svg) no-repeat;
+    background-position: top 0 left 60%;
+    background-size: 1366px 1366px;
     flex-basis: 25%;
     min-height: 96vh; }
     @media (max-width: 900px) {
@@ -428,6 +432,9 @@ main {
 main section h2 {
   color: #00bce4; }
 
+.h3-color {
+  color: #85c9e9; }
+
 .flex-box {
   display: flex;
   flex-wrap: wrap; }
@@ -444,28 +451,23 @@ main section h2 {
   border: solid 1px #979797;
   margin: 18px 0; }
 
-.download-pdf {
-  border-radius: 4px;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
-  border: solid 1px #1790cc;
-  color: #5e5e5e;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 20px 0 80px 0;
-  padding: 13px; }
-  .download-pdf:hover {
-    background-color: rgba(0, 0, 0, 0.05); }
+.btn-box {
+  margin-top: 50px; }
 
 .btn {
   background-color: rgba(57, 57, 57, 0.9); }
+  @media (max-width: 700px) {
+    .btn {
+      margin: 10px auto; } }
   .btn:hover {
     background-color: rgba(57, 57, 57, 0.8); }
   .btn a {
     font-size: 18px;
     font-weight: bold;
-    text-transform: uppercase; }
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
   .btn .arrow {
     top: 49%; }
 

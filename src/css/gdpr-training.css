@@ -279,7 +279,8 @@ li.drop-down {
   height: 92px;
   left: 0;
   position: fixed;
-  width: 75%; }
+  width: 75%;
+  z-index: 1; }
   @media (max-width: 1000px) {
     .header-back {
       height: 79px;
@@ -364,10 +365,13 @@ main {
     main section ul {
       padding-left: 40px; }
       main section ul li {
-        margin-left: -20px; }
+        font-size: 18px;
+        margin-left: -20px;
+        padding: 3px 0; }
   main aside {
-    background: url(../images/group-1985.z.svg) top center no-repeat;
-    background-size: 1200px 120%;
+    background: url(../images/group-1985.z.svg) no-repeat;
+    background-position: top 0 left 60%;
+    background-size: 1366px 1366px;
     flex-basis: 25%;
     min-height: 96vh; }
     @media (max-width: 900px) {
@@ -427,9 +431,6 @@ main {
 
 main section h2 {
   color: #ec519d; }
-
-main aside {
-  background-size: 1600px 1600px; }
 
 .gdpr-list {
   display: flex;

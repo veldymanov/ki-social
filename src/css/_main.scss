@@ -8,6 +8,7 @@
   left: 0;
   position: fixed;
   width: 75%;
+  z-index: 1;
   @media (max-width: 1000px) {
     height: 79px;
     width: 100%;
@@ -101,15 +102,18 @@ main {
     ul {
       padding-left: 40px;
       li {
+        font-size: 18px;
         margin-left: -20px;
+        padding: 3px 0;
       }
     }
 
   }
 
   aside {
-    background: url(../images/group-1985.z.svg) top center no-repeat;
-    background-size: 1200px 120%;
+    background: url(../images/group-1985.z.svg) no-repeat;
+    background-position: top 0 left 60%;
+    background-size: 1366px 1366px;
     flex-basis: 25%;
     min-height: 96vh;
     @media (max-width: 900px) {
