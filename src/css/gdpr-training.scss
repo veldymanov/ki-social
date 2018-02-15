@@ -1,0 +1,62 @@
+@import "menu", "mob-menu", "main";
+
+main {
+  section {
+    h2 {
+      color: #ec519d;
+    }
+  }
+}
+
+.gdpr-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.gdpr-list-item {
+  background-color: #ffffff;
+  border: solid 1px #cdcdcd;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+  flex-basis: 221px;
+  min-height: 77px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  &.long {
+    flex-basis: 465px;
+  }
+  p {
+    color: #5e5e5e;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.lecture-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.lecture-list-item {
+  border: solid 1px #1790cc;
+  border-radius: 4px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+  flex-basis: 60%;
+  padding: 15px;
+  margin-bottom: 20px;
+  @media (max-width: 1300px) {
+    flex-basis: 85%;
+  }
+  @media (max-width: 800px) {
+    flex-basis: 100%;
+  }
+  p {
+    color: #5e5e5e;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+}
