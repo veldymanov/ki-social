@@ -205,7 +205,7 @@ li.drop-down {
     position: fixed;
     left: 0;
     height: auto;
-    max-height: calc(100vh - 79px);
+    max-height: calc(85vh - 79px);
     overflow-y: auto;
     top: 79px;
     width: 100%; }
@@ -277,7 +277,8 @@ body {
   background-size: 1400px 1230px; }
 
 main {
-  height: 100vh; }
+  height: 100vh;
+  min-height: 700px; }
 
 .contact-box {
   background-color: #ffffff;
@@ -286,7 +287,7 @@ main {
   left: 50%;
   padding: 3% 5%;
   position: relative;
-  top: 54%;
+  top: 50%;
   transform: translate(-50%, -50%);
   width: 80%; }
   .contact-box h2 {
@@ -300,7 +301,7 @@ main {
     text-align: center; }
 
 p.email {
-  font-size: 24px; }
+  font-size: 22px; }
 
 .btn-box {
   display: flex;
