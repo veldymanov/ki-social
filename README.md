@@ -97,6 +97,7 @@ README.md                 -
   https://veldymanov.github.io/ki-social/audit-solutions.html
   https://veldymanov.github.io/ki-social/data-liberation.html
   https://veldymanov.github.io/ki-social/complience-solutions.html
+
   https://veldymanov.github.io/ki-social/anonymized-analitics.html
   https://veldymanov.github.io/ki-social/gdpr-training.html
 ````
