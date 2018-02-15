@@ -1,0 +1,64 @@
+@import  "menu", "mob-menu", "main";
+
+main {
+  section{
+    h2 {
+      color: #00bce4;
+    }
+  }
+}
+
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-box-item {
+  flex-basis: 50%;
+  @media (max-width: 1000px) {
+    flex-basis: 100%;
+    min-height: 300px;
+  }
+}
+.empty {
+  background-color: #d8d8d8;
+  border: solid 1px #979797;
+  margin: 18px 0;
+}
+
+.download-pdf {
+  border-radius: 4px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px #1790cc;
+  color: #5e5e5e;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0 80px 0;
+  padding: 13px;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.btn{
+  background-color: rgba(57, 57, 57, 0.9);
+  &:hover {
+    background-color: rgba(57, 57, 57, 0.8);
+  }
+  a {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .arrow {
+    top: 49%;
+  }
+}
+.btn-right {
+  a { padding-right: 30px; }
+  .arrow-left {
+    right: 10px;
+    transform: translateY(-35%) rotate(90deg);
+  }
+}

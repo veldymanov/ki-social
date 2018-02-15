@@ -155,9 +155,9 @@ main {
 }
 
 .btn-left {
-  background-color: rgb(57, 57, 57); //#393939;
+  background-color: rgba(57, 57, 57, 0.9); //#393939;
   &:hover {
-    background-color: rgba(57, 57, 57, 0.85);
+    background-color: rgba(57, 57, 57, 0.8);
   }
   a { padding-left: 30px; }
   .arrow-left {
@@ -166,9 +166,9 @@ main {
   }
 }
 .btn-right {
-  background-color: rgb(236, 81, 157);// #ec519d;
+  background-color: rgba(236, 81, 157, 0.9);// #ec519d;
   &:hover {
-    background-color: rgba(236, 81, 157, 0.80);
+    background-color: rgba(236, 81, 157, 0.75);
   }
   a { padding-right: 30px; }
   .arrow-left {
