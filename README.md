@@ -102,8 +102,7 @@ README.md                 -
   https://veldymanov.github.io/ki-social/gdpr-training.html
   https://veldymanov.github.io/ki-social/main-title-goes-here.html
   https://veldymanov.github.io/ki-social/training.html
-
   https://veldymanov.github.io/ki-social/case-studies.html
-
+  https://veldymanov.github.io/ki-social/contact.html
 
 ````

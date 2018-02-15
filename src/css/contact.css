@@ -276,200 +276,79 @@ body {
   background-position: top 0 left 50%;
   background-size: 1400px 1230px; }
 
-.present {
+main {
+  height: 100vh; }
+
+.contact-box {
+  background-color: #ffffff;
+  display: inline-block;
+  box-shadow: 0 0 27px 0 rgba(0, 0, 0, 0.15);
+  left: 50%;
+  padding: 3% 5%;
+  position: relative;
+  top: 54%;
+  transform: translate(-50%, -50%);
+  width: 80%; }
+  .contact-box h2 {
+    color: #8e499b;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center; }
+  .contact-box p {
+    color: #5e5e5e;
+    font-size: 18px;
+    text-align: center; }
+
+p.email {
+  font-size: 24px; }
+
+.btn-box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 92px;
-  padding: 0 128px; }
-  @media (max-width: 1300px) {
-    .present {
-      padding: 0 50px; } }
-  @media (max-width: 1150px) {
-    .present {
-      padding: 0 5px; } }
-  .present .triangle {
-    flex-basis: 100%; }
-  .present .present-footer {
-    flex-basis: 100%; }
+  justify-content: center; }
 
-.skew-box {
-  background-color: #fff;
-  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
-  height: 520px;
-  padding: 0;
-  position: relative;
-  transform: skew(0deg, 30deg);
-  width: 500px; }
-  @media (max-width: 550px) {
-    .skew-box {
-      height: 480px;
-      width: 310px; } }
-  .skew-box:nth-child(2) {
-    margin-left: 20px;
-    top: 300px; }
-    @media (max-width: 1030px) {
-      .skew-box:nth-child(2) {
-        margin-right: 20px;
-        top: 20px; } }
-    @media (max-width: 1000px) {
-      .skew-box:nth-child(2) {
-        margin: 0; } }
-
-.text-box {
-  padding: 60px 30px 80px 30px;
-  transform: skew(0deg, -30deg); }
-  .text-box h2 {
-    color: #0079c2;
-    font-size: 25px;
-    font-weight: 500;
-    text-transform: uppercase; }
-  .text-box p {
-    color: #5e5e5e;
-    font-size: 28px;
-    font-weight: 300; }
-  @media (max-width: 550px) {
-    .text-box h2 {
-      font-size: 20px; }
-    .text-box p {
-      font-size: 23px; } }
-
-.triangle {
-  position: relative;
-  top: -115px; }
-  .triangle .svg-container {
-    display: inline-block;
-    left: 50%;
-    position: relative;
-    transform: translate(-120%); }
-    @media (max-width: 1030px) {
-      .triangle .svg-container {
-        left: 50%;
-        transform: translate(-50%);
-        top: 60px; } }
-    .triangle .svg-container .svg-text {
-      font-size: 25px;
-      left: 60px;
-      position: absolute;
-      text-align: center;
-      text-transform: uppercase;
-      top: 170px;
-      transform: rotate(-30deg);
-      white-space: pre-line; }
-      @media (max-width: 550px) {
-        .triangle .svg-container .svg-text {
-          left: 42px;
-          top: 130px; } }
-    .triangle .svg-container svg {
-      height: auto;
-      width: 418px; }
-      @media (max-width: 550px) {
-        .triangle .svg-container svg {
-          width: 310px; } }
-
-.present-footer {
-  background-color: #fff;
-  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
-  padding: 50px;
-  position: relative;
-  top: -140px; }
-  @media (max-width: 1150px) {
-    .present-footer {
-      margin: 0 2%; } }
-  @media (max-width: 1030px) {
-    .present-footer {
-      top: -50px; } }
-  .present-footer p {
-    color: #5e5e5e;
-    font-size: 18px; }
-
-.footer {
-  padding: 0 5% 30px 5%;
-  position: relative;
-  top: -80px; }
-  @media (max-width: 1030px) {
-    .footer {
-      top: 0; } }
-  .footer h3 {
-    color: #5e5e5e;
-    font-weight: normal;
-    margin: 0; }
-
-.mob-foot-btn {
-  border: solid 1px #979797;
-  border-radius: 4px;
+.btn-box-item {
+  border-radius: 5px;
   cursor: pointer;
-  display: none;
-  height: 44px;
-  left: 50%;
-  margin: 30px 0;
-  position: relative;
-  transform: translateX(-50%);
-  width: 300px; }
-  @media (max-width: 1030px) {
-    .mob-foot-btn {
-      display: block; } }
-  .mob-foot-btn.active .arrow-filled-down {
-    transform: translateY(-50%) rotate(0deg); }
-  .mob-foot-btn p {
-    color: #5e5e5e;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-55%); }
-  .mob-foot-btn .arrow-filled-down {
-    height: auto;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%) rotate(180deg);
-    transform-origin: 50% 50%;
-    transition: transform 0.4s ease;
-    width: 13px; }
-    .mob-foot-btn .arrow-filled-down path {
-      fill: #ecab0e;
-      stroke-width: 70; }
-
-.foot-nav {
   display: flex;
-  font-size: 18px;
-  justify-content: space-between;
-  list-style-type: none;
-  margin: 0;
-  padding: 50px 0;
-  position: relative;
-  transition: height .4s; }
-  @media (max-width: 1030px) {
-    .foot-nav {
-      align-items: left;
-      background-color: #fff;
-      box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.15);
-      flex-direction: column;
-      height: 0;
-      left: 50%;
-      margin: -30px 0 30px 0;
-      overflow: hidden;
-      padding: 0 20px;
-      position: absolute;
-      transform: translate(-50%);
-      width: 300px; }
-      .foot-nav.active {
-        height: 168px; } }
-  @media (max-width: 1030px) {
-    .foot-nav li {
-      padding: 5px 0; } }
-  .foot-nav li a {
-    border-bottom: 1px solid transparent;
-    color: #bbbdbf;
+  margin: 8px 0;
+  overflow: hidden;
+  width: 200px; }
+  .btn-box-item:hover {
+    opacity: 0.9; }
+  .btn-box-item:nth-child(2) {
+    margin: 8px 10px; }
+  .btn-box-item picture {
     display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all 0.25s; }
-    .foot-nav li a:hover {
-      border-color: #f6832e;
-      color: #f6832e; }
+    height: 50px;
+    overflow: hidden;
+    width: 50px; }
+    .btn-box-item picture img {
+      display: block;
+      height: 30px;
+      left: 50%;
+      position: relative;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: auto; }
+  .btn-box-item p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 auto;
+    padding: 14px 12px 12px 12px; }
 
-.foot-text {
-  color: #5e5e5e; }
+.twitter {
+  background-color: #0084b4; }
+  .twitter picture {
+    background: #007099; }
+
+.facebook {
+  background-color: #3b5998; }
+  .facebook picture img {
+    height: 59px; }
+
+.linkedin {
+  background-color: #0D7EC3; }
+  .linkedin picture img {
+    height: 60px; }
