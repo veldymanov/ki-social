@@ -425,33 +425,40 @@ main {
     right: 10px;
     transform: translateY(-35%) rotate(90deg); }
 
-main h2 {
-  margin-bottom: 25px; }
-
-.audit-list {
-  margin-bottom: 40px; }
-
-.audit-list-item {
+main section div {
   display: flex; }
-  .audit-list-item picture {
+  main section div h2 {
+    color: #50b948; }
+  main section div .head-img {
     display: block;
-    flex-basis: 60px;
-    flex-shrink: 0; }
-    .audit-list-item picture img {
+    margin-left: 20px;
+    position: relative;
+    top: -20px; }
+    main section div .head-img img {
       display: block;
-      height: 50px;
-      position: relative;
-      transform: translateY(30%);
-      width: 50px; }
-  .audit-list-item .text p {
-    margin-top: 0; }
+      height: 72px;
+      width: 61px; }
 
-.btn-right {
-  background-color: #393939; }
-  .btn-right a {
-    padding-right: 30px; }
-  .btn-right .arrow-left {
-    right: 10px;
-    transform: translateY(-35%) rotate(90deg); }
-  .btn-right:hover {
-    background-color: rgba(57, 57, 57, 0.85); }
+.btn {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #231f20; }
+  .btn:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
+  .btn a {
+    color: #231f20;
+    font-size: 18px;
+    font-weight: bold; }
+  .btn .arrow path {
+    stroke: #231f20; }
+  .btn picture {
+    display: block;
+    position: relative;
+    top: 9px;
+    z-index: -1; }
+    .btn picture img {
+      display: block;
+      height: 42px;
+      width: auto; }
+
+.btn-right picture {
+  left: 7px; }

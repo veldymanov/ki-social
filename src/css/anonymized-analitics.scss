@@ -1,0 +1,59 @@
+@import "menu", "mob-menu", "main";
+
+main {
+  section {
+    div {
+      display: flex;
+      h2 {
+        color: #50b948;
+      //  margin-bottom: 25px;
+      }
+      .head-img {
+        display: block;
+        margin-left: 20px;
+        position: relative;
+        top: -20px;
+        img {
+          display: block;
+          height: 72px;
+          width: 61px;
+        }
+      }
+    }
+  }
+}
+
+// bottom buttons
+.btn {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #231f20;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  a {
+    color: #231f20;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .arrow {
+    path {
+      stroke: #231f20;
+    }
+  }
+  picture {
+    display: block;
+    position: relative;
+    top: 9px;
+    z-index: -1;
+    img {
+      display: block;
+      height: 42px;
+      width: auto;
+    }
+  }
+}
+.btn-right {
+  picture {
+    left: 7px;
+  }
+}

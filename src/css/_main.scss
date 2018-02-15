@@ -156,23 +156,24 @@ main {
 
 .btn-left {
   background-color: rgb(57, 57, 57); //#393939;
+  &:hover {
+    background-color: rgba(57, 57, 57, 0.85);
+  }
   a { padding-left: 30px; }
   .arrow-left {
     left: 10px;
     transform: translateY(-35%) rotate(-90deg);
   }
-  &:hover {
-    background-color: rgba(57, 57, 57, 0.85);
-  }
 }
 .btn-right {
   background-color: rgb(236, 81, 157);// #ec519d;
+  &:hover {
+    background-color: rgba(236, 81, 157, 0.80);
+  }
   a { padding-right: 30px; }
   .arrow-left {
     right: 10px;
     transform: translateY(-35%) rotate(90deg);
   }
-  &:hover {
-    background-color: rgba(236, 81, 157, 0.80);
-  }
+
 }
