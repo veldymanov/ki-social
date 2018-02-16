@@ -1,0 +1,1 @@
+"use strict";document.addEventListener("DOMContentLoaded",function(t){var o={};o.mobFootBtn=document.querySelector(".js-mob-foot-btn"),o.mobFootNav=document.querySelector(".js-foot-nav"),o.mobFootBtn.addEventListener("click",function(){o.mobFootBtn.classList.toggle("active"),o.mobFootNav.classList.toggle("active")})});

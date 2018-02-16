@@ -119,7 +119,7 @@ gulp.task('url:adjust', ['build:copy'], () =>
 );
 
 //minify scripts
-gulp.task('scripts:minify', ['url:adjust'], () =>
+gulp.task('scripts:minify', ['build:copy'], () =>
   gulp.src(['docs/**/*.js', '!docs/**/chat-socket.js'])
   .pipe(plumber())
   .pipe(babel({
@@ -165,9 +165,12 @@ gulp.task('html:minify', ['inline'], () =>
 );
 
 //task to remove unwanted build files
-gulp.task('build:remove', ['inline'], () =>
+gulp.task('build:remove', ['scripts:minify'], () =>
   del.sync([
-    'docs/css/**', 'docs/js/**'])
+    'docs/css/*.scss',
+  //  'docs/css/**',
+  //  'docs/js/**'
+  ])
 );
 
 gulp.task('build', ['build:remove']);
