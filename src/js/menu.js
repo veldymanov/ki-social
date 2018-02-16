@@ -23,15 +23,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // click instead of hover
   mob.dropDownMenuItemElements.forEach((dropDownMenuItemElement) => {
     dropDownMenuItemElement.addEventListener('click', function(e){
-      e.preventDefault();
-      e.stopPropagation();
-      this.classList.toggle("active");
+      if (window.innerWidth <= 900) {
+        e.preventDefault();
+        e.stopPropagation();
+        this.classList.toggle("active");
+      }
     });
   });
   mob.dropDownElements.forEach((dropDownElement) => {
     dropDownElement.addEventListener('click', function(e){
-      e.preventDefault();
-      this.classList.toggle("active");
+      if (window.innerWidth <= 900) {
+        e.preventDefault();
+        this.classList.toggle("active");
+      }
     });
   });
 
