@@ -112,8 +112,10 @@ main {
 
   aside {
     background: url(../images/group-1985.z.svg) no-repeat;
-    background-position: top 0 left 60%;
-    background-size: 1366px 1366px;
+  //  background-position: top 0 left 60%;
+  //  background-size: 1366px 1366px;
+    background-position: top 0 right -130px;
+    background-size: 1590px 1400px;
     flex-basis: 25%;
     min-height: 96vh;
     @media (max-width: 900px) {
