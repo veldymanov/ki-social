@@ -71,7 +71,7 @@ README.md                 -
 #### Create production version of the app (in 'docs/' directory):
 ````
     gulp build
-    
+
     //run browser-sync for build
     gulp build:server
 ````
@@ -80,7 +80,8 @@ README.md                 -
 ````
   kidesign.io
   kisocial.io
-  https://app.zeplin.io/project/597a88924d00aed3c6c6fe29
+
+  https://newpolitico.com/blog/
 ````
 
 ### Pages
