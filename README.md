@@ -59,13 +59,6 @@ README.md                 -
 ````
     gulp
 ````
-#### Save changes
-````
-    git status
-    git add .
-    git commit -m "write comments!!!!"
-    git push
-````
 #### Pictures (.jpg, .png, .gif, .svg) optimizing, and creating .webp (from .jpg, .png)
 ````
     All pictures inside 'src/images/' directory will be optimized.
@@ -78,8 +71,9 @@ README.md                 -
 #### Create production version of the app (in 'docs/' directory):
 ````
     gulp build
-     //run browser-sync for build
-     gulp build:server
+    
+    //run browser-sync for build
+    gulp build:server
 ````
 
 ### Resourses
@@ -97,7 +91,6 @@ README.md                 -
   https://veldymanov.github.io/ki-social/audit-solutions.html
   https://veldymanov.github.io/ki-social/data-liberation.html
   https://veldymanov.github.io/ki-social/complience-solutions.html
-
   https://veldymanov.github.io/ki-social/anonymized-analitics.html
   https://veldymanov.github.io/ki-social/gdpr-training.html
   https://veldymanov.github.io/ki-social/main-title-goes-here.html
